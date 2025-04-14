@@ -1,0 +1,56 @@
+body {
+  background-color: #000000;
+color: white;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+  margin: 0;
+}
+
+.container {
+  background: #1c1c1c;
+  border-radius: 10px;
+  padding: 20px;
+  display: inline-block;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.links a {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  background: #0077ff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background 0.3s;
+}
+
+.links a:hover {
+  background: #005fcc;
+}
+body {
+  font-family: 'Roboto', sans-serif; /* Usando a fonte Roboto */
+}
+.links a {
+  margin: 10px;
+  text-decoration: none;
+  color: white;
+  background: #28a745; /* Cor verde */
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background 0.3s ease; /* Efeito de transição */
+}
+
+.links a:hover {
+  background: #218838; /* Cor verde escuro ao passar o mouse */
+}
+
