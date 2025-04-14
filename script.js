@@ -35,3 +35,15 @@ document.getElementById("form-contato").addEventListener("submit", function (e) 
     alert("Por favor, preencha todos os campos.");
   }
 });
+window.addEventListener("scroll", () => {
+  document.querySelectorAll("section").forEach(section => {
+    if (isElementInViewport(section)) {
+      section.classList.add("visible");
+    }
+  });
+});
+
+function isElementInViewport(el) {
+  const rect = el.getBoundingClientRect();
+  return rect.top <= window.innerHeight && rect.bottom >= 0;
+}
