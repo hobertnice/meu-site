@@ -53,4 +53,54 @@ body {
 .links a:hover {
   background: #218838; /* Cor verde escuro ao passar o mouse */
 }
+header {
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 0;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  margin: 0 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+a:hover {
+  background-color: #ff5733;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loader img {
+  width: 100px;
+}
+body {
+  padding-top: 60px; /* Ajuste de acordo com a altura da sua barra */
+}
 
