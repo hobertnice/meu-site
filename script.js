@@ -25,3 +25,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.onload = function() {
   document.getElementById("loader").style.display = "none";
 }
+window.onload = function() {
+  document.getElementById("loader").style.display = "none";
+}
