@@ -20,3 +20,18 @@ window.addEventListener("load", function () {
   // Inicializa AOS (animações)
   AOS.init();
 });
+// Validação do formulário
+document.getElementById("form-contato").addEventListener("submit", function (e) {
+  e.preventDefault(); // Impede o envio real
+
+  const nome = document.getElementById("nome").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const mensagem = document.getElementById("mensagem").value.trim();
+
+  if (nome && email && mensagem) {
+    document.getElementById("mensagem-sucesso").style.display = "block";
+    this.reset(); // Limpa o formulário
+  } else {
+    alert("Por favor, preencha todos os campos.");
+  }
+});
