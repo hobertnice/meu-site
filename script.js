@@ -28,3 +28,5 @@ window.onload = function() {
 window.onload = function() {
   document.getElementById("loader").style.display = "none";
 }
+// Inicializar AOS
+AOS.init();
