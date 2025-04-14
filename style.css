@@ -103,4 +103,28 @@ a:hover {
 body {
   padding-top: 60px; /* Ajuste de acordo com a altura da sua barra */
 }
+/* Media Query para telas pequenas */
+@media (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  header nav ul li a {
+    font-size: 16px;
+  }
+
+  body {
+    padding-top: 80px; /* Ajuste o padding para que o conteúdo não fique embaixo da barra */
+  }
+
+  /* Ajustar as seções para que fiquem melhores no celular */
+  section {
+    padding: 20px;
+  }
+}
 
