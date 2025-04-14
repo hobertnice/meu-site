@@ -242,4 +242,36 @@ section {
 section.visible {
   opacity: 1;
 }
+/* Estilos padrão para dispositivos maiores */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Ajuste para telas pequenas, como smartphones */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px; /* Reduz o tamanho da fonte */
+  }
+
+  header nav ul {
+    flex-direction: column; /* Deixa os itens de navegação empilhados */
+    text-align: center; /* Centraliza os links */
+  }
+
+  .container {
+    text-align: center; /* Centraliza o conteúdo da página */
+  }
+
+  /* Ajuste nas imagens */
+  img {
+    width: 80%; /* Reduz o tamanho da imagem para que não ultrapasse a tela */
+    max-width: 200px;
+  }
+
+  /* Ajuste de largura para os links */
+  .links a {
+    display: block;
+    margin: 10px 0;
+  }
+}
 
