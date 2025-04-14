@@ -1,37 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<!-- AOS CSS -->
-<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
   <meta charset="UTF-8">
   <title>Meu Primeiro Site</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-<!-- AOS JavaScript -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
+<!-- Loader (somente um) -->
 <div id="loader">
   <div class="spinner"></div>
 </div>
 
-
-  <div class="container">
-    <h1>Elias Pereira</h1>
-    <img src="https://via.placeholder.com/150" alt="">
-    <p>Olá! Estou começando na área de tecnologia e esse é meu primeiro site!</p>
-    <div class="links">
-      <a href="https://instagram.com/seuusuario" target="_blank">Instagram</a>
-      <a href="https://wa.me/5599999999999" target="_blank">WhatsApp</a>
-    </div>
-  </div>
-  <script src="script.js"></script>
-</body>
-</html>
-
-<a href="sobre.html">Sobre</a>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<!-- Cabeçalho -->
 <header>
   <nav>
     <ul>
@@ -41,24 +24,41 @@
     </ul>
   </nav>
 </header>
-<div id="loader">
-  <img src="loader.gif" alt="Carregando...">
-</div>
-<section id="home">
-  <h1>Bem-vindo ao meu site</h1>
-  <!-- Conteúdo da seção Home -->
-</section>
 
-<section id="sobre">
-  <h1>Sobre</h1>
-  <!-- Conteúdo da seção Sobre -->
-</section>
+<!-- Conteúdo principal, escondido até o loader sumir -->
+<main id="conteudo" style="display: none;">
 
-<section id="contato">
-  <h1>Contato</h1>
-  <!-- Conteúdo da seção Contato -->
-</section>
-<section id="home" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
-  <h1>Bem-vindo ao meu site</h1>
-  <!-- Conteúdo da seção Home -->
-</section>
+  <div class="container">
+    <h1>Elias Pereira</h1>
+    <img src="https://via.placeholder.com/150" alt="Foto de perfil">
+    <p>Olá! Estou começando na área de tecnologia e esse é meu primeiro site!</p>
+    <div class="links">
+      <a href="https://instagram.com/seuusuario" target="_blank">Instagram</a>
+      <a href="https://wa.me/5599999999999" target="_blank">WhatsApp</a>
+    </div>
+  </div>
+
+  <section id="home" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+    <h1>Bem-vindo ao meu site</h1>
+    <!-- Conteúdo da seção Home -->
+  </section>
+
+  <section id="sobre">
+    <h1>Sobre</h1>
+    <!-- Conteúdo da seção Sobre -->
+  </section>
+
+  <section id="contato">
+    <h1>Contato</h1>
+    <!-- Conteúdo da seção Contato -->
+  </section>
+
+  <a href="sobre.html">Página Sobre Completa</a>
+</main>
+
+<!-- Scripts no final -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
