@@ -274,4 +274,66 @@ body {
     margin: 10px 0;
   }
 }
+/* Para telas grandes */
+body {
+  font-size: 16px;
+}
+
+/* Para telas médias (ex: tablets) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  nav ul {
+    display: block;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
+/* Para telas pequenas (ex: celulares) */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .links a {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    text-align: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+h1 {
+  font-size: 5vw;  /* O tamanho da fonte será 5% da largura da tela */
+}
+
+p {
+  font-size: 2vw;
+}
+#loader img {
+  width: 50px; /* Diminuindo o tamanho do loader */
+}
 
